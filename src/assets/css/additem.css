@@ -1,0 +1,29 @@
+#left{
+    width: 50%;
+    border-right:4px solid rgb(254, 254, 254);
+  
+    padding: 30px;
+}
+#right{
+    
+    width: 50%;
+    border-left:4px solid rgb(254, 252, 252);
+    
+    padding: 30px;
+    
+
+
+
+}
+.content-inner{
+    display: flex;
+}
+#left-heading,#right-heading{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+#submitbtn1,#submitbtn2{
+    border-radius: 20px;
+}
+
