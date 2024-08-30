@@ -1,4 +1,5 @@
 import React,{Fragment} from 'react';
+import Landing from './landingPage/Landing'
 import Dashboard from './outlet/Dashboard';
 import Order from './outlet/Order';
 import Outlet from './outlet/Outlet';
@@ -16,12 +17,31 @@ import KitchenBills from './company/KitchenBills';
 import KitchenDetails from './company/KitchenDetails';
 import OutletBills from './company/OutletBills';
 import ViewKitchens from './company/ViewKitchens';
+import {BrowserRouter,Routes,Route} from 'react-router-dom'
+
 
 
 function App() {
   return (
     <div className="App">
-      <Dashboard/>
+      <BrowserRouter>
+      <Routes>
+        {/* Landing signIn Page */}
+        <Route path='/' element={<Landing/>}/>
+        {/* Company Routes */}
+        <Route path='/company' element={<CompanyDashboard/>}/>
+        <Route path='/company/signup' element={<CompanySignup/>}/>
+        <Route path='/company/addkitchen' element={<KitchenSignUp/>}/>
+        <Route path='/company/viewkitchen' element={<ViewKitchens/>}/>
+        <Route path='/company/viewkitchen/kitchendetails' element={<KitchenDetails/>}/>
+        <Route path='/company/viewkitchen/kitchendetails/outletbill' element={<OutletBills/>}/>
+        {/* <Route path='/company/bills' element={<KitchenBills/>}/> DOUBT */}
+        {/* kitchen routes */}
+        
+        
+      </Routes>
+      </BrowserRouter>
+      {/* <Dashboard/> */}
       {/* <Order/> */}
      {/* <Outlet/> */}
      {/* <Additem/> */}
