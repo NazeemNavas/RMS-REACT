@@ -1,9 +1,11 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-function KitchenDetails() {
+function CompanyProfile() {
   return (
     <div>
+      
+<div>
   <meta charSet="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
   <title>Company</title>
@@ -25,6 +27,7 @@ function KitchenDetails() {
   </div>
   <aside className="sidebar sidebar-default sidebar-hover sidebar-mini navs-pill-all ">
     <div className="sidebar-header d-flex align-items-center justify-content-start">
+      {/* logo navigation start */}
       {/* <a href="../dashboard/index.html" className="navbar-brand"> */}
         {/*Logo start*/}
         <div className="logo">
@@ -479,6 +482,7 @@ function KitchenDetails() {
         </div>
         {/*logo End*/}
       {/* </a> */}
+      {/* logo navigation end */}
       <div className="sidebar-toggle" data-toggle="sidebar" data-active="true">
         <i className="icon">
           <svg width={20} height={20} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -493,7 +497,7 @@ function KitchenDetails() {
         {/* Sidebar Menu Start */}
         <ul className="navbar-nav iq-main-menu">
           <li className="nav-item sub-nav">
-            <Link className="nav-link " aria-current="page" to="/company">
+            <Link className="nav-link active" aria-current="page" to="/company">
               <i className="icon">
                 <svg width={20} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path opacity="0.4" d="M16.0756 2H19.4616C20.8639 2 22.0001 3.14585 22.0001 4.55996V7.97452C22.0001 9.38864 20.8639 10.5345 19.4616 10.5345H16.0756C14.6734 10.5345 13.5371 9.38864 13.5371 7.97452V4.55996C13.5371 3.14585 14.6734 2 16.0756 2Z" fill="currentColor" />
@@ -514,7 +518,7 @@ function KitchenDetails() {
             </Link>
           </li>
           <li className="nav-item sub-nav">
-            <Link className="nav-link active" aria-current="page" to="/company/viewkitchen">
+            <Link className="nav-link" aria-current="page" to="/company/viewkitchen">
               <i className="icon">
                 <svg width={20} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M11.9488 14.54C8.49884 14.54 5.58789 15.1038 5.58789 17.2795C5.58789 19.4562 8.51765 20.0001 11.9488 20.0001C15.3988 20.0001 18.3098 19.4364 18.3098 17.2606C18.3098 15.084 15.38 14.54 11.9488 14.54Z" fill="currentColor" />                                <path opacity="0.4" d="M11.949 12.467C14.2851 12.467 16.1583 10.5831 16.1583 8.23351C16.1583 5.88306 14.2851 4 11.949 4C9.61293 4 7.73975 5.88306 7.73975 8.23351C7.73975 10.5831 9.61293 12.467 11.949 12.467Z" fill="currentColor" />                                <path opacity="0.4" d="M21.0881 9.21923C21.6925 6.84176 19.9205 4.70654 17.664 4.70654C17.4187 4.70654 17.1841 4.73356 16.9549 4.77949C16.9244 4.78669 16.8904 4.802 16.8725 4.82902C16.8519 4.86324 16.8671 4.90917 16.8895 4.93889C17.5673 5.89528 17.9568 7.0597 17.9568 8.30967C17.9568 9.50741 17.5996 10.6241 16.9728 11.5508C16.9083 11.6462 16.9656 11.775 17.0793 11.7948C17.2369 11.8227 17.3981 11.8371 17.5629 11.8416C19.2059 11.8849 20.6807 10.8213 21.0881 9.21923Z" fill="currentColor" />                                <path d="M22.8094 14.817C22.5086 14.1722 21.7824 13.73 20.6783 13.513C20.1572 13.3851 18.747 13.205 17.4352 13.2293C17.4155 13.232 17.4048 13.2455 17.403 13.2545C17.4003 13.2671 17.4057 13.2887 17.4316 13.3022C18.0378 13.6039 20.3811 14.916 20.0865 17.6834C20.074 17.8032 20.1698 17.9068 20.2888 17.8888C20.8655 17.8059 22.3492 17.4853 22.8094 16.4866C23.0637 15.9589 23.0637 15.3456 22.8094 14.817Z" fill="currentColor" />                                <path opacity="0.4" d="M7.04459 4.77973C6.81626 4.7329 6.58077 4.70679 6.33543 4.70679C4.07901 4.70679 2.30701 6.84201 2.9123 9.21947C3.31882 10.8216 4.79355 11.8851 6.43661 11.8419C6.60136 11.8374 6.76343 11.8221 6.92013 11.7951C7.03384 11.7753 7.09115 11.6465 7.02668 11.551C6.3999 10.6234 6.04263 9.50765 6.04263 8.30991C6.04263 7.05904 6.43303 5.89462 7.11085 4.93913C7.13234 4.90941 7.14845 4.86348 7.12696 4.82926C7.10906 4.80135 7.07593 4.78694 7.04459 4.77973Z" fill="currentColor" />                                <path d="M3.32156 13.5127C2.21752 13.7297 1.49225 14.1719 1.19139 14.8167C0.936203 15.3453 0.936203 15.9586 1.19139 16.4872C1.65163 17.4851 3.13531 17.8066 3.71195 17.8885C3.83104 17.9065 3.92595 17.8038 3.91342 17.6832C3.61883 14.9167 5.9621 13.6046 6.56918 13.3029C6.59425 13.2885 6.59962 13.2677 6.59694 13.2542C6.59515 13.2452 6.5853 13.2317 6.5656 13.2299C5.25294 13.2047 3.84358 13.3848 3.32156 13.5127Z" fill="currentColor" />     
@@ -545,7 +549,7 @@ function KitchenDetails() {
           {/*Nav Start*/}
           <nav className="nav navbar navbar-expand-lg navbar-light iq-navbar">
             <div className="container-fluid navbar-inner">
-              <a href="./../dashboard/index.html" className="navbar-brand">
+              {/* <a href="./../dashboard/index.html" className="navbar-brand"> */}
                 {/*Logo start*/}
                 <div className="logo">
                   <svg width={40} height={43} className="text-primary" viewBox="0 0 60 63" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -998,7 +1002,7 @@ function KitchenDetails() {
                   <img src="./../assets/images/favicon.png" className="img-fluid logo-img" alt="img4" />
                 </div>
                 {/*logo End*/}
-              </a>
+              {/* </a> */}
               <div className="sidebar-toggle" data-toggle="sidebar" data-active="true">
                 <i className="icon">
                   <svg width="20px" height="20px" viewBox="0 0 24 24">
@@ -1173,7 +1177,7 @@ function KitchenDetails() {
                     <a className="nav-link py-0 d-flex align-items-center" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                       <img src="./../assets/images/avatars/01.png" alt="User-Profile" className="img-fluid avatar avatar-50 avatar-rounded" />
                       <div className="caption ms-3 d-none d-md-block ">
-                        <h6 className="mb-0 caption-title">Kitchen 1</h6>
+                        <h6 className="mb-0 caption-title">Austin Robertson</h6>
                         <p className="mb-0 caption-sub-title">Marketing Administrator</p>
                       </div>
                     </a>
@@ -1191,201 +1195,85 @@ function KitchenDetails() {
           {/* Nav Header Component End */}
           {/*Nav End*/}
         </div>
-        <nav aria-label="breadcrumb">
-          <ol className="breadcrumb">
-            <li className="breadcrumb-item"><Link to="/company/viewkitchen">View Kitchens</Link></li>
-          </ol>
-        </nav>
         {/* Main content start */}
+        <nav aria-label="breadcrumb">
+          <ol className="breadcrumb ">
+            <li className="breadcrumb-item"><Link to="/company">Back</Link></li>
+          </ol>
+        </nav> 
         <div className="content-inner mt-5 py-0">
           <div>
             <div className="row">
-              <div className="col-sm-12">
+              <div className="col-xl-3 col-lg-4">
                 <div className="card">
-                  <h4 className="card-title mt-2 ms-3">Kitchen 1</h4>
                   <div className="card-header d-flex justify-content-between">
                     <div className="header-title">
-                      <h4>Outlet Details</h4>
+                      <h4 className="card-title">Company Name</h4>
                     </div>
                   </div>
-                  <div className="card-body px-0">
-                    <div className="table-responsive">
-                      <table id="user-list-table" className="table table-striped" role="grid" data-toggle="data-table">
-                        <thead>
-                          <tr className="ligth">
-                            <th>Profile</th>
-                            <th>Outlet Name</th>
-                            <th>Email</th>
-                            {/* <th>Orders</th>  */}
-                            <th>Details</th>
-                            {/* <th>Company</th> */}
-                            {/* <th>Join Date</th> */}
-                            {/* <th style="min-width: 100px">Action</th> */}
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <td className="text-center"><img className="bg-soft-primary rounded img-fluid avatar-40 me-3" src="./../assets/images/avatars/01.png" alt="profile" /></td>
-                            <td>Outlet 1</td>
-                            <td>annasthesia@gmail.com</td>
-                            <td>
-                              <div className="flex align-items-center list-user-action">
-                                <Link to="/company/viewkitchen/kitchendetails/outletbill">
-                                  <button className="btn btn-sm btn-icon btn-warning " data-toggle="tooltip" data-placement="top" title data-original-title="Edit">
-                                    <span className="btn-inner">
-                                      <svg width={20} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path opacity="0.4" d="M18.8088 9.021C18.3573 9.021 17.7592 9.011 17.0146 9.011C15.1987 9.011 13.7055 7.508 13.7055 5.675V2.459C13.7055 2.206 13.5036 2 13.253 2H7.96363C5.49517 2 3.5 4.026 3.5 6.509V17.284C3.5 19.889 5.59022 22 8.16958 22H16.0463C18.5058 22 20.5 19.987 20.5 17.502V9.471C20.5 9.217 20.299 9.012 20.0475 9.013C19.6247 9.016 19.1177 9.021 18.8088 9.021Z" fill="currentColor" />                                <path opacity="0.4" d="M16.0842 2.56737C15.7852 2.25637 15.2632 2.47037 15.2632 2.90137V5.53837C15.2632 6.64437 16.1742 7.55437 17.2802 7.55437C17.9772 7.56237 18.9452 7.56437 19.7672 7.56237C20.1882 7.56137 20.4022 7.05837 20.1102 6.75437C19.0552 5.65737 17.1662 3.69137 16.0842 2.56737Z" fill="currentColor" />                                <path fillRule="evenodd" clipRule="evenodd" d="M8.97398 11.3877H12.359C12.77 11.3877 13.104 11.0547 13.104 10.6437C13.104 10.2327 12.77 9.89868 12.359 9.89868H8.97398C8.56298 9.89868 8.22998 10.2327 8.22998 10.6437C8.22998 11.0547 8.56298 11.3877 8.97398 11.3877ZM8.97408 16.3819H14.4181C14.8291 16.3819 15.1631 16.0489 15.1631 15.6379C15.1631 15.2269 14.8291 14.8929 14.4181 14.8929H8.97408C8.56308 14.8929 8.23008 15.2269 8.23008 15.6379C8.23008 16.0489 8.56308 16.3819 8.97408 16.3819Z" fill="currentColor" />  
-                                      </svg>
-                                      Bills
-                                    </span>
-                                  </button> 
-                                </Link>
-                              </div>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td className="text-center"><img className="bg-soft-primary rounded img-fluid avatar-40 me-3" src="./../assets/images/avatars/02.png" alt="profile" /></td>
-                            <td>Outlet 2</td>
-                            <td>brocklee@gmail.com</td>
-                            <td>
-                              <div className="flex align-items-center list-user-action">
-                                <Link to="/company/viewkitchen/kitchendetails/outletbill">
-                                  <button className="btn btn-sm btn-icon btn-warning " data-toggle="tooltip" data-placement="top" title data-original-title="Edit">
-                                    <span className="btn-inner">
-                                      <svg width={20} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path opacity="0.4" d="M18.8088 9.021C18.3573 9.021 17.7592 9.011 17.0146 9.011C15.1987 9.011 13.7055 7.508 13.7055 5.675V2.459C13.7055 2.206 13.5036 2 13.253 2H7.96363C5.49517 2 3.5 4.026 3.5 6.509V17.284C3.5 19.889 5.59022 22 8.16958 22H16.0463C18.5058 22 20.5 19.987 20.5 17.502V9.471C20.5 9.217 20.299 9.012 20.0475 9.013C19.6247 9.016 19.1177 9.021 18.8088 9.021Z" fill="currentColor" />                                <path opacity="0.4" d="M16.0842 2.56737C15.7852 2.25637 15.2632 2.47037 15.2632 2.90137V5.53837C15.2632 6.64437 16.1742 7.55437 17.2802 7.55437C17.9772 7.56237 18.9452 7.56437 19.7672 7.56237C20.1882 7.56137 20.4022 7.05837 20.1102 6.75437C19.0552 5.65737 17.1662 3.69137 16.0842 2.56737Z" fill="currentColor" />                                <path fillRule="evenodd" clipRule="evenodd" d="M8.97398 11.3877H12.359C12.77 11.3877 13.104 11.0547 13.104 10.6437C13.104 10.2327 12.77 9.89868 12.359 9.89868H8.97398C8.56298 9.89868 8.22998 10.2327 8.22998 10.6437C8.22998 11.0547 8.56298 11.3877 8.97398 11.3877ZM8.97408 16.3819H14.4181C14.8291 16.3819 15.1631 16.0489 15.1631 15.6379C15.1631 15.2269 14.8291 14.8929 14.4181 14.8929H8.97408C8.56308 14.8929 8.23008 15.2269 8.23008 15.6379C8.23008 16.0489 8.56308 16.3819 8.97408 16.3819Z" fill="currentColor" />  
-                                      </svg>
-                                      Bills
-                                    </span>
-                                  </button> 
-                                </Link>
-                              </div>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td className="text-center"><img className="bg-soft-primary rounded img-fluid avatar-40 me-3" src="./../assets/images/avatars/03.png" alt="profile" /></td>
-                            <td>Outlet 3</td>
-                            <td>dandruff@gmail.com</td>
-                            <td>
-                              <div className="flex align-items-center list-user-action">
-                                <Link to="/company/viewkitchen/kitchendetails/outletbill">
-                                  <button className="btn btn-sm btn-icon btn-warning " data-toggle="tooltip" data-placement="top" title data-original-title="Edit">
-                                    <span className="btn-inner">
-                                      <svg width={20} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path opacity="0.4" d="M18.8088 9.021C18.3573 9.021 17.7592 9.011 17.0146 9.011C15.1987 9.011 13.7055 7.508 13.7055 5.675V2.459C13.7055 2.206 13.5036 2 13.253 2H7.96363C5.49517 2 3.5 4.026 3.5 6.509V17.284C3.5 19.889 5.59022 22 8.16958 22H16.0463C18.5058 22 20.5 19.987 20.5 17.502V9.471C20.5 9.217 20.299 9.012 20.0475 9.013C19.6247 9.016 19.1177 9.021 18.8088 9.021Z" fill="currentColor" />                                <path opacity="0.4" d="M16.0842 2.56737C15.7852 2.25637 15.2632 2.47037 15.2632 2.90137V5.53837C15.2632 6.64437 16.1742 7.55437 17.2802 7.55437C17.9772 7.56237 18.9452 7.56437 19.7672 7.56237C20.1882 7.56137 20.4022 7.05837 20.1102 6.75437C19.0552 5.65737 17.1662 3.69137 16.0842 2.56737Z" fill="currentColor" />                                <path fillRule="evenodd" clipRule="evenodd" d="M8.97398 11.3877H12.359C12.77 11.3877 13.104 11.0547 13.104 10.6437C13.104 10.2327 12.77 9.89868 12.359 9.89868H8.97398C8.56298 9.89868 8.22998 10.2327 8.22998 10.6437C8.22998 11.0547 8.56298 11.3877 8.97398 11.3877ZM8.97408 16.3819H14.4181C14.8291 16.3819 15.1631 16.0489 15.1631 15.6379C15.1631 15.2269 14.8291 14.8929 14.4181 14.8929H8.97408C8.56308 14.8929 8.23008 15.2269 8.23008 15.6379C8.23008 16.0489 8.56308 16.3819 8.97408 16.3819Z" fill="currentColor" /> 
-                                      </svg>
-                                      Bills
-                                    </span>
-                                  </button> 
-                                </Link>
-                              </div>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td className="text-center"><img className="bg-soft-primary rounded img-fluid avatar-40 me-3" src="./../assets/images/avatars/04.png" alt="profile" /></td>
-                            <td>Outlet 4</td>
-                            <td>hansolo@gmail.com</td>
-                            <td>
-                              <div className="flex align-items-center list-user-action">
-                                <Link to="/company/viewkitchen/kitchendetails/outletbill">
-                                  <button className="btn btn-sm btn-icon btn-warning " data-toggle="tooltip" data-placement="top" title data-original-title="Edit">
-                                    <span className="btn-inner">
-                                      <svg width={20} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path opacity="0.4" d="M18.8088 9.021C18.3573 9.021 17.7592 9.011 17.0146 9.011C15.1987 9.011 13.7055 7.508 13.7055 5.675V2.459C13.7055 2.206 13.5036 2 13.253 2H7.96363C5.49517 2 3.5 4.026 3.5 6.509V17.284C3.5 19.889 5.59022 22 8.16958 22H16.0463C18.5058 22 20.5 19.987 20.5 17.502V9.471C20.5 9.217 20.299 9.012 20.0475 9.013C19.6247 9.016 19.1177 9.021 18.8088 9.021Z" fill="currentColor" />                                <path opacity="0.4" d="M16.0842 2.56737C15.7852 2.25637 15.2632 2.47037 15.2632 2.90137V5.53837C15.2632 6.64437 16.1742 7.55437 17.2802 7.55437C17.9772 7.56237 18.9452 7.56437 19.7672 7.56237C20.1882 7.56137 20.4022 7.05837 20.1102 6.75437C19.0552 5.65737 17.1662 3.69137 16.0842 2.56737Z" fill="currentColor" />                                <path fillRule="evenodd" clipRule="evenodd" d="M8.97398 11.3877H12.359C12.77 11.3877 13.104 11.0547 13.104 10.6437C13.104 10.2327 12.77 9.89868 12.359 9.89868H8.97398C8.56298 9.89868 8.22998 10.2327 8.22998 10.6437C8.22998 11.0547 8.56298 11.3877 8.97398 11.3877ZM8.97408 16.3819H14.4181C14.8291 16.3819 15.1631 16.0489 15.1631 15.6379C15.1631 15.2269 14.8291 14.8929 14.4181 14.8929H8.97408C8.56308 14.8929 8.23008 15.2269 8.23008 15.6379C8.23008 16.0489 8.56308 16.3819 8.97408 16.3819Z" fill="currentColor" /> 
-                                      </svg>
-                                      Bills 
-                                    </span>
-                                  </button> 
-                                </Link>
-                              </div>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td className="text-center"><img className="bg-soft-primary rounded img-fluid avatar-40 me-3" src="./../assets/images/avatars/06.png" alt="profile" /></td>
-                            <td>Outlet 6</td>
-                            <td>ericshun@gmail.com</td>
-                            <td>
-                              <div className="flex align-items-center list-user-action">
-                                <Link to="/company/viewkitchen/kitchendetails/outletbill">
-                                  <button className="btn btn-sm btn-icon btn-warning " data-toggle="tooltip" data-placement="top" title data-original-title="Edit">
-                                    <span className="btn-inner">
-                                      <svg width={20} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path opacity="0.4" d="M18.8088 9.021C18.3573 9.021 17.7592 9.011 17.0146 9.011C15.1987 9.011 13.7055 7.508 13.7055 5.675V2.459C13.7055 2.206 13.5036 2 13.253 2H7.96363C5.49517 2 3.5 4.026 3.5 6.509V17.284C3.5 19.889 5.59022 22 8.16958 22H16.0463C18.5058 22 20.5 19.987 20.5 17.502V9.471C20.5 9.217 20.299 9.012 20.0475 9.013C19.6247 9.016 19.1177 9.021 18.8088 9.021Z" fill="currentColor" />                                <path opacity="0.4" d="M16.0842 2.56737C15.7852 2.25637 15.2632 2.47037 15.2632 2.90137V5.53837C15.2632 6.64437 16.1742 7.55437 17.2802 7.55437C17.9772 7.56237 18.9452 7.56437 19.7672 7.56237C20.1882 7.56137 20.4022 7.05837 20.1102 6.75437C19.0552 5.65737 17.1662 3.69137 16.0842 2.56737Z" fill="currentColor" />                                <path fillRule="evenodd" clipRule="evenodd" d="M8.97398 11.3877H12.359C12.77 11.3877 13.104 11.0547 13.104 10.6437C13.104 10.2327 12.77 9.89868 12.359 9.89868H8.97398C8.56298 9.89868 8.22998 10.2327 8.22998 10.6437C8.22998 11.0547 8.56298 11.3877 8.97398 11.3877ZM8.97408 16.3819H14.4181C14.8291 16.3819 15.1631 16.0489 15.1631 15.6379C15.1631 15.2269 14.8291 14.8929 14.4181 14.8929H8.97408C8.56308 14.8929 8.23008 15.2269 8.23008 15.6379C8.23008 16.0489 8.56308 16.3819 8.97408 16.3819Z" fill="currentColor" /> 
-                                      </svg>
-                                      Bills
-                                    </span>
-                                  </button> 
-                                </Link>
-                              </div>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td className="text-center"><img className="bg-soft-primary rounded img-fluid avatar-40 me-3" src="./../assets/images/avatars/03.png" alt="profile" /></td>
-                            <td>Outlet 7</td>
-                            <td>budwiser@ymail.com</td>
-                            <td>
-                              <div className="flex align-items-center list-user-action">
-                                <Link to="/company/viewkitchen/kitchendetails/outletbill">
-                                  <button className="btn btn-sm btn-icon btn-warning " data-toggle="tooltip" data-placement="top" title data-original-title="Edit">
-                                    <span className="btn-inner">
-                                      <svg width={20} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path opacity="0.4" d="M18.8088 9.021C18.3573 9.021 17.7592 9.011 17.0146 9.011C15.1987 9.011 13.7055 7.508 13.7055 5.675V2.459C13.7055 2.206 13.5036 2 13.253 2H7.96363C5.49517 2 3.5 4.026 3.5 6.509V17.284C3.5 19.889 5.59022 22 8.16958 22H16.0463C18.5058 22 20.5 19.987 20.5 17.502V9.471C20.5 9.217 20.299 9.012 20.0475 9.013C19.6247 9.016 19.1177 9.021 18.8088 9.021Z" fill="currentColor" />                                <path opacity="0.4" d="M16.0842 2.56737C15.7852 2.25637 15.2632 2.47037 15.2632 2.90137V5.53837C15.2632 6.64437 16.1742 7.55437 17.2802 7.55437C17.9772 7.56237 18.9452 7.56437 19.7672 7.56237C20.1882 7.56137 20.4022 7.05837 20.1102 6.75437C19.0552 5.65737 17.1662 3.69137 16.0842 2.56737Z" fill="currentColor" />                                <path fillRule="evenodd" clipRule="evenodd" d="M8.97398 11.3877H12.359C12.77 11.3877 13.104 11.0547 13.104 10.6437C13.104 10.2327 12.77 9.89868 12.359 9.89868H8.97398C8.56298 9.89868 8.22998 10.2327 8.22998 10.6437C8.22998 11.0547 8.56298 11.3877 8.97398 11.3877ZM8.97408 16.3819H14.4181C14.8291 16.3819 15.1631 16.0489 15.1631 15.6379C15.1631 15.2269 14.8291 14.8929 14.4181 14.8929H8.97408C8.56308 14.8929 8.23008 15.2269 8.23008 15.6379C8.23008 16.0489 8.56308 16.3819 8.97408 16.3819Z" fill="currentColor" /> 
-                                      </svg>
-                                      Bills
-                                    </span>
-                                  </button> 
-                                </Link>
-                              </div>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td className="text-center"><img className="bg-soft-primary rounded img-fluid avatar-40 me-3" src="./../assets/images/avatars/05.png" alt="profile" /></td>
-                            <td>Outlet 8</td>
-                            <td>margearita@gmail.com</td>
-                            <td>
-                              <div className="flex align-items-center list-user-action">
-                                <Link to="/company/viewkitchen/kitchendetails/outletbill">
-                                  <button className="btn btn-sm btn-icon btn-warning " data-toggle="tooltip" data-placement="top" title data-original-title="Edit">
-                                    <span className="btn-inner">
-                                      <svg width={20} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path opacity="0.4" d="M18.8088 9.021C18.3573 9.021 17.7592 9.011 17.0146 9.011C15.1987 9.011 13.7055 7.508 13.7055 5.675V2.459C13.7055 2.206 13.5036 2 13.253 2H7.96363C5.49517 2 3.5 4.026 3.5 6.509V17.284C3.5 19.889 5.59022 22 8.16958 22H16.0463C18.5058 22 20.5 19.987 20.5 17.502V9.471C20.5 9.217 20.299 9.012 20.0475 9.013C19.6247 9.016 19.1177 9.021 18.8088 9.021Z" fill="currentColor" />                                <path opacity="0.4" d="M16.0842 2.56737C15.7852 2.25637 15.2632 2.47037 15.2632 2.90137V5.53837C15.2632 6.64437 16.1742 7.55437 17.2802 7.55437C17.9772 7.56237 18.9452 7.56437 19.7672 7.56237C20.1882 7.56137 20.4022 7.05837 20.1102 6.75437C19.0552 5.65737 17.1662 3.69137 16.0842 2.56737Z" fill="currentColor" />                                <path fillRule="evenodd" clipRule="evenodd" d="M8.97398 11.3877H12.359C12.77 11.3877 13.104 11.0547 13.104 10.6437C13.104 10.2327 12.77 9.89868 12.359 9.89868H8.97398C8.56298 9.89868 8.22998 10.2327 8.22998 10.6437C8.22998 11.0547 8.56298 11.3877 8.97398 11.3877ZM8.97408 16.3819H14.4181C14.8291 16.3819 15.1631 16.0489 15.1631 15.6379C15.1631 15.2269 14.8291 14.8929 14.4181 14.8929H8.97408C8.56308 14.8929 8.23008 15.2269 8.23008 15.6379C8.23008 16.0489 8.56308 16.3819 8.97408 16.3819Z" fill="currentColor" /> 
-                                      </svg>
-                                      Bills
-                                    </span>
-                                  </button> 
-                                </Link>
-                              </div>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td className="text-center"><img className="bg-soft-primary rounded img-fluid avatar-40 me-3" src="./../assets/images/avatars/02.png" alt="profile" /></td>
-                            <td>Outlet 9</td>
-                            <td>billdabear@gmail.com</td>
-                            <td>
-                              <div className="flex align-items-center list-user-action">
-                                <Link to="/company/viewkitchen/kitchendetails/outletbill">
-                                  <button className="btn btn-sm btn-icon btn-warning " data-toggle="tooltip" data-placement="top" title data-original-title="Edit">
-                                    <span className="btn-inner">
-                                      <svg width={20} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path opacity="0.4" d="M18.8088 9.021C18.3573 9.021 17.7592 9.011 17.0146 9.011C15.1987 9.011 13.7055 7.508 13.7055 5.675V2.459C13.7055 2.206 13.5036 2 13.253 2H7.96363C5.49517 2 3.5 4.026 3.5 6.509V17.284C3.5 19.889 5.59022 22 8.16958 22H16.0463C18.5058 22 20.5 19.987 20.5 17.502V9.471C20.5 9.217 20.299 9.012 20.0475 9.013C19.6247 9.016 19.1177 9.021 18.8088 9.021Z" fill="currentColor" />                                <path opacity="0.4" d="M16.0842 2.56737C15.7852 2.25637 15.2632 2.47037 15.2632 2.90137V5.53837C15.2632 6.64437 16.1742 7.55437 17.2802 7.55437C17.9772 7.56237 18.9452 7.56437 19.7672 7.56237C20.1882 7.56137 20.4022 7.05837 20.1102 6.75437C19.0552 5.65737 17.1662 3.69137 16.0842 2.56737Z" fill="currentColor" />                                <path fillRule="evenodd" clipRule="evenodd" d="M8.97398 11.3877H12.359C12.77 11.3877 13.104 11.0547 13.104 10.6437C13.104 10.2327 12.77 9.89868 12.359 9.89868H8.97398C8.56298 9.89868 8.22998 10.2327 8.22998 10.6437C8.22998 11.0547 8.56298 11.3877 8.97398 11.3877ZM8.97408 16.3819H14.4181C14.8291 16.3819 15.1631 16.0489 15.1631 15.6379C15.1631 15.2269 14.8291 14.8929 14.4181 14.8929H8.97408C8.56308 14.8929 8.23008 15.2269 8.23008 15.6379C8.23008 16.0489 8.56308 16.3819 8.97408 16.3819Z" fill="currentColor" /> 
-                                      </svg>
-                                      Bills
-                                    </span>
-                                  </button> 
-                                </Link>
-                              </div>
-                            </td>
-                          </tr>
-                        </tbody>
-                      </table>
+                  <div className="card-body">
+                    <form>
+                      <div className="form-group">
+                        <div className="profile-img-edit position-relative">
+                          <img className="profile-pic rounded avatar-100" src="./../assets/images/avatars/01.png" alt="profile-pic" /> 
+                          <div className="upload-icone bg-primary">
+                            <svg className="upload-button" width={14} height={14} viewBox="0 0 24 24">
+                              <path fill="#ffffff" d="M14.06,9L15,9.94L5.92,19H5V18.08L14.06,9M17.66,3C17.41,3 17.15,3.1 16.96,3.29L15.13,5.12L18.88,8.87L20.71,7.04C21.1,6.65 21.1,6 20.71,5.63L18.37,3.29C18.17,3.09 17.92,3 17.66,3M14.06,6.19L3,17.25V21H6.75L17.81,9.94L14.06,6.19Z" />
+                            </svg>
+                            <input className="file-upload" type="file" accept="image/*" />
+                          </div> 
+                        </div>
+                      </div>
+                      <div className="form-group">
+                        <label className="form-label">User Role:</label>
+                        <input type="text " placeholder="Admin" className="selectpicker form-control" data-style="py-0" disabled />
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+              <div className="col-xl-9 col-lg-8">
+                <div className="card">
+                  <div className="card-header d-flex justify-content-between">
+                    <div className="header-title">
+                      <h4 className="card-title">Company Information</h4>
+                    </div>
+                  </div>
+                  <div className="card-body">
+                    <div className="new-user-info">
+                      <form>
+                        <div className="row">
+                          <div className="form-group col-md-8">
+                            <label className="form-label" htmlFor="fname">Company Name:</label>
+                            <input type="text" className="form-control" id="cname" placeholder="Company Name" />
+                          </div>
+                          <div className="form-group col-md-8">
+                            <label className="form-label" htmlFor="add1">Address :</label>
+                            <input type="text" className="form-control" id="address" placeholder=" Address" />
+                          </div>
+                          <div className="form-group col-md-6">
+                            <label className="form-label" htmlFor="mobno">Mobile Number:</label>
+                            <input type="text" className="form-control" id="mobno" placeholder="Mobile Number" />
+                          </div>
+                          <div className="form-group col-md-6">
+                            <label className="form-label" htmlFor="altconno">WhatsApp Number:</label>
+                            <input type="text" className="form-control" id="whatsappNumber" placeholder="WhatsApp Number" />
+                          </div>
+                          <div className="form-group col-md-6">
+                            <label className="form-label" htmlFor="email">Email:</label>
+                            <input type="email" className="form-control" id="email" placeholder="Email" />
+                          </div>
+                          <hr />
+                          <button type="submit" className="btn btn-primary col-lg-2 ms-auto me-3">Done</button>
+                        </div></form>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
+          {/* Main content end */}
         </div>
-        {/* Main content end */}
       </main></div>
     {/* Footer Section Start */}
     <footer className="footer">
@@ -1410,9 +1298,9 @@ function KitchenDetails() {
   {/* fslightbox JavaScript */}
   {/* app JavaScript */}
   {/* moment JavaScript */}
+  
+  
 </div>
-
-  )
-}
-
-export default KitchenDetails
+</div>
+  )}
+export default CompanyProfile

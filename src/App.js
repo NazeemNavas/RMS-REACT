@@ -17,6 +17,7 @@ import KitchenBills from './company/KitchenBills';
 import KitchenDetails from './company/KitchenDetails';
 import OutletBills from './company/OutletBills';
 import ViewKitchens from './company/ViewKitchens';
+import CompanyProfile from './company/CompanyProfile';
 import {BrowserRouter,Routes,Route} from 'react-router-dom'
 
 
@@ -35,9 +36,10 @@ function App() {
         <Route path='/company/viewkitchen' element={<ViewKitchens/>}/>
         <Route path='/company/viewkitchen/kitchendetails' element={<KitchenDetails/>}/>
         <Route path='/company/viewkitchen/kitchendetails/outletbill' element={<OutletBills/>}/>
-        {/* <Route path='/company/bills' element={<KitchenBills/>}/> DOUBT */}
+        <Route path='/company/companyprofile' element={<CompanyProfile/>}/>
+         <Route path='/company/kitchenreport' element={<KitchenBills/>}/> 
         {/* kitchen routes */}
-        
+
         
       </Routes>
       </BrowserRouter>

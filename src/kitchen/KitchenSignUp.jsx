@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 function KitchenSignUp() {
   return (
@@ -18,7 +19,7 @@ function KitchenSignUp() {
         <div className="col-md-12 col-lg-7 col-xl-4">    
           <nav aria-label="breadcrumb">
             <ol className="breadcrumb">
-              <li className="breadcrumb-item"><a href="../Company/dashboard.html">Home</a></li>
+              <li className="breadcrumb-item"><Link to="/company">Home</Link></li>
               <li className="breadcrumb-item active" aria-current="page">Kitchen Signup</li>
             </ol>
           </nav>
