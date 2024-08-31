@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 function Order() {
   return ( <div> <div className="position-relative">
@@ -479,7 +480,7 @@ function Order() {
         {/* Sidebar Menu Start */}
         <ul className="navbar-nav iq-main-menu">
           <li className="nav-item sub-nav">
-            <a className="nav-link " aria-current="page" href="./dashboard.html">
+            <Link className="nav-link " aria-current="page" to="/outlet">
               <i className="icon">
                 <svg width={20} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path opacity="0.4" d="M16.0756 2H19.4616C20.8639 2 22.0001 3.14585 22.0001 4.55996V7.97452C22.0001 9.38864 20.8639 10.5345 19.4616 10.5345H16.0756C14.6734 10.5345 13.5371 9.38864 13.5371 7.97452V4.55996C13.5371 3.14585 14.6734 2 16.0756 2Z" fill="currentColor" />
@@ -487,10 +488,10 @@ function Order() {
                 </svg>
               </i>
               <span className="item-name">Dashboard</span>
-            </a>
+            </Link>
           </li>
           <li className="nav-item sub-nav">
-            <a className="nav-link active   " aria-current="page" href="./order.html">
+            <Link className="nav-link active   " aria-current="page" to="/outlet/order">
               <i className="icon">
                 <svg width={20} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fillRule="evenodd" clipRule="evenodd" d="M8.07996 6.6499V6.6599C7.64896 6.6599 7.29996 7.0099 7.29996 7.4399C7.29996 7.8699 7.64896 8.2199 8.07996 8.2199H11.069C11.5 8.2199 11.85 7.8699 11.85 7.4289C11.85 6.9999 11.5 6.6499 11.069 6.6499H8.07996ZM15.92 12.7399H8.07996C7.64896 12.7399 7.29996 12.3899 7.29996 11.9599C7.29996 11.5299 7.64896 11.1789 8.07996 11.1789H15.92C16.35 11.1789 16.7 11.5299 16.7 11.9599C16.7 12.3899 16.35 12.7399 15.92 12.7399ZM15.92 17.3099H8.07996C7.77996 17.3499 7.48996 17.1999 7.32996 16.9499C7.16996 16.6899 7.16996 16.3599 7.32996 16.1099C7.48996 15.8499 7.77996 15.7099 8.07996 15.7399H15.92C16.319 15.7799 16.62 16.1199 16.62 16.5299C16.62 16.9289 16.319 17.2699 15.92 17.3099Z" fill="currentColor" />  
@@ -498,7 +499,7 @@ function Order() {
                 {/* <svg width="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">                                <path opacity="0.4" d="M16.191 2H7.81C4.77 2 3 3.78 3 6.83V17.16C3 20.26 4.77 22 7.81 22H16.191C19.28 22 21 20.26 21 17.16V6.83C21 3.78 19.28 2 16.191 2Z" fill="currentColor"></path>                                                            </svg>                             */}
               </i>
               <span className="item-name">Orders</span>
-            </a>
+            </Link>
           </li>
           {/* Sidebar Menu End */}      </ul></div>
     </div>
