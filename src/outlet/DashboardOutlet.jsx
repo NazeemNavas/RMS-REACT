@@ -1,6 +1,12 @@
 import React from 'react'
-import Dashboardpng from '../assets/images/dashboard.png'
 import { Link } from 'react-router-dom';
+import Dashboardpng from '../assets/images/dashboard.png'
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css'; // Core Swiper styles
+import 'swiper/css/pagination'; // Pagination module styles
+import 'swiper/css/navigation'; // Navigation module styles
+import 'swiper/css/grid';
+import { Autoplay, Pagination, Navigation,Grid} from 'swiper/modules';
 function DashboardOutlet() {
      return (
        <div>
@@ -1188,8 +1194,37 @@ function DashboardOutlet() {
                </div>
             </div>
             <div className="card-body">
+           
+             
                <div className="swiper-container d-slider2">
-                  <div className="swiper-wrapper">
+                  <div className="swiper-wrapper"> <Swiper
+  slidesPerView={5}
+  spaceBetween={20}
+  loop={true}
+  autoplay={{
+    delay: 2000,
+    disableOnInteraction: false,
+    pauseOnMouseEnter: true,
+  }}
+  modules={[Autoplay, Pagination, Navigation]} // Include Grid module here
+  
+  breakpoints={{
+    640: {
+      slidesPerView: 1,
+      spaceBetween: 10,
+    },
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
+    1024: {
+      slidesPerView: 5,
+      spaceBetween: 20,
+    },
+  }}
+  className="swiper-container d-slider3"
+>
+        <SwiperSlide>
                      <div className="swiper-slide">
                         <div className="card active category-menu">
                            <div className="card-body">
@@ -1206,6 +1241,8 @@ function DashboardOutlet() {
                            </div>
                         </div>
                      </div>
+                     </SwiperSlide>
+                     <SwiperSlide>
                      <div className="swiper-slide">
                         <div className="card category-menu">
                            <div className="card-body">
@@ -1222,6 +1259,8 @@ function DashboardOutlet() {
                            </div>
                         </div>
                      </div>
+                     </SwiperSlide>
+                     <SwiperSlide>
                      <div className="swiper-slide">
                         <div className="card category-menu">
                            <div className="card-body">
@@ -1238,6 +1277,8 @@ function DashboardOutlet() {
                            </div>
                         </div>
                      </div>
+                     </SwiperSlide>
+                     <SwiperSlide>
                      <div className="swiper-slide">
                         <div className="card category-menu">
                            <div className="card-body">
@@ -1254,6 +1295,8 @@ function DashboardOutlet() {
                            </div>
                         </div>
                      </div>
+                     </SwiperSlide>
+                     <SwiperSlide>
                      <div className="swiper-slide">
                         <div className="card category-menu">
                            <div className="card-body">
@@ -1269,7 +1312,8 @@ function DashboardOutlet() {
                               </div>
                            </div>
                         </div>
-                     </div>
+                     </div></SwiperSlide>
+                     <SwiperSlide>
                      <div className="swiper-slide">
                         <div className="card category-menu">
                            <div className="card-body">
@@ -1285,7 +1329,8 @@ function DashboardOutlet() {
                               </div>
                            </div>
                         </div>
-                     </div>
+                     </div></SwiperSlide>
+                     <SwiperSlide>
                      <div className="swiper-slide">
                         <div className="card category-menu">
                            <div className="card-body">
@@ -1302,6 +1347,8 @@ function DashboardOutlet() {
                            </div>
                         </div>
                      </div>
+                     </SwiperSlide>
+                     <SwiperSlide>
                      <div className="swiper-slide">
                         <div className="card category-menu">
                            <div className="card-body">
@@ -1317,9 +1364,11 @@ function DashboardOutlet() {
                               </div>
                            </div>
                         </div>
-                     </div>
+                     </div></SwiperSlide> </Swiper>
                   </div>
-               </div>
+               </div> 
+              
+              
                <div className="col-xl-12 col-lg-12 dish-card-horizontal mt-2">
                   <div className="row row-cols-1 row-cols-md-2 row-cols-xl-3 row-cols-xxl-4">
                      <div className="col active">
@@ -1515,9 +1564,33 @@ function DashboardOutlet() {
                </div> 
             </div>
             <div className="card-body p-0 dish-card-vertical">
+            <Swiper
+  loop={true}
+  autoplay={{
+    delay: 2000,
+    disableOnInteraction: false,
+    pauseOnMouseEnter: true,
+  }}
+  slidesPerView={2}
+  grid={{
+    rows: 2, // Set number of rows to 2
+    fill: 'row', // Ensure the grid fills row by row (default behavior)
+  }}
+  spaceBetween={30}
+  
+  modules={[Autoplay, Pagination, Navigation, Grid]} // Ensure Grid module is included
+  className="swiper-container d-slider3"
+>
+  
+
+     
+      {/* Add more SwiperSlide components as needed */}
+      
+    
+    
                <div className="swiper swiper-container d-slider3">
                   <div className="swiper-wrapper">
-                     <div className="swiper-slide">
+                     <div className="swiper-slide"><SwiperSlide>
                         <div className="card card-white dish-card2 index">
                             <div className="card-body ">
                                 <div className="d-flex profile-img1">
@@ -1572,7 +1645,9 @@ function DashboardOutlet() {
                                     </div>            
                                 </div>
                             </div>
-                        </div>                     <div className="card card-white dish-card2 index">
+                        </div> </SwiperSlide>   
+                        <SwiperSlide>                  
+                        <div className="card card-white dish-card2 index">
                             <div className="card-body ">
                                 <div className="d-flex profile-img1">
                                     <div className="profile-img31">
@@ -1626,8 +1701,9 @@ function DashboardOutlet() {
                                     </div>            
                                 </div>
                             </div>
-                        </div>                  </div>
-                     <div className="swiper-slide">
+                        </div>  </SwiperSlide>                </div>
+                        
+                     <div className="swiper-slide"><SwiperSlide>
                         <div className="card card-white dish-card2 index">
                             <div className="card-body ">
                                 <div className="d-flex profile-img1">
@@ -1682,7 +1758,7 @@ function DashboardOutlet() {
                                     </div>            
                                 </div>
                             </div>
-                        </div>                     <div className="card card-white dish-card2 active">
+                        </div>  </SwiperSlide>    <SwiperSlide>               <div className="card card-white dish-card2 active">
                             <div className="card-body ">
                                 <div className="d-flex profile-img1">
                                     <div className="profile-img31">
@@ -1736,8 +1812,8 @@ function DashboardOutlet() {
                                     </div>            
                                 </div>
                             </div>
-                        </div>                  </div>
-                     <div className="swiper-slide">
+                        </div>               </SwiperSlide>   </div>
+                     <div className="swiper-slide"><SwiperSlide>
                         <div className="card card-white dish-card2 index">
                             <div className="card-body ">
                                 <div className="d-flex profile-img1">
@@ -1792,7 +1868,7 @@ function DashboardOutlet() {
                                     </div>            
                                 </div>
                             </div>
-                        </div>                     <div className="card card-white dish-card2 index">
+                        </div>              </SwiperSlide>     <SwiperSlide> <div className="card card-white dish-card2 index">
                             <div className="card-body ">
                                 <div className="d-flex profile-img1">
                                     <div className="profile-img31">
@@ -1846,8 +1922,8 @@ function DashboardOutlet() {
                                     </div>            
                                 </div>
                             </div>
-                        </div>                  </div>  
-                     <div className="swiper-slide">
+                        </div>         </SwiperSlide>        </div>  
+                     <div className="swiper-slide"> <SwiperSlide>
                         <div className="card card-white dish-card2 index">
                             <div className="card-body ">
                                 <div className="d-flex profile-img1">
@@ -1902,7 +1978,7 @@ function DashboardOutlet() {
                                     </div>            
                                 </div>
                             </div>
-                        </div>                     <div className="card card-white dish-card2 index">
+                        </div>    </SwiperSlide>               <SwiperSlide>  <div className="card card-white dish-card2 index">
                             <div className="card-body ">
                                 <div className="d-flex profile-img1">
                                     <div className="profile-img31">
@@ -1956,9 +2032,9 @@ function DashboardOutlet() {
                                     </div>            
                                 </div>
                             </div>
-                        </div>                  </div>                
+                        </div>        </SwiperSlide>          </div>                
                   </div>
-               </div>
+               </div></Swiper>
             </div>
          </div>
       </div>
