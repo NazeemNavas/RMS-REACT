@@ -479,7 +479,7 @@ function CompanyDashboard() {
           </div>
           {/*logo End*/}
         </a>
-        <div className="sidebar-toggle" data-toggle="sidebar" data-active="true">
+        <div className="sidebar-toggle" data-toggle="sidebar" data-active={true}>
           <i className="icon">
             <svg width={20} height={20} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M4.25 12.2744L19.25 12.2744" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />

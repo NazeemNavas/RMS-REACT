@@ -1191,11 +1191,7 @@ function KitchenBills() {
             {/* Nav Header Component End */}
             {/*Nav End*/}
           </div>
-          <nav aria-label="breadcrumb">
-            <ol className="breadcrumb ">
-              <li className="breadcrumb-item"><Link to="/company/viewkitchen">Back</Link></li>
-            </ol>
-          </nav> 
+        
           {/* Main content start */}
           <div className="content-inner mt-5 py-0">
             <div className="row">

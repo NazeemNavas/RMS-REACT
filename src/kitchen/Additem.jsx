@@ -4,6 +4,8 @@ import { Link } from 'react-router-dom'
 function Additem() {
   return (
     <div>
+       <link rel="stylesheet" href="../assets/css/additem.css" />
+
   <div className="position-relative">
     <div className="user-img1">
       <svg width={1857} viewBox="0 0 1857 327" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1214,7 +1216,7 @@ function Additem() {
                 <label className="form-label" htmlFor="disabledCustomFile">Add Image</label>
                 <input type="file" className="form-control" id="disabledCustomFile" />
               </div>
-              <button type="submit" id="submitbtn1" className="btn btn-primary float-end mt-3">Submit</button>
+              <button  id="submitbtn1" className="btn btn-primary float-end mt-3">Submit</button>
             </form>    
           </div>
           <div id="right">
@@ -1244,7 +1246,7 @@ function Additem() {
                 <label className="form-label" htmlFor="disabledCustomFile">Add Image</label>
                 <input type="file" className="form-control" id="disabledCustomFile" />
               </div>
-              <button type="submit" id="submitbtn2" className="btn btn-primary float-end mt-3">Submit</button>
+              <button id="submitbtn2" className="btn btn-primary float-end mt-3">Submit</button>
             </form>
           </div>
         </div>
