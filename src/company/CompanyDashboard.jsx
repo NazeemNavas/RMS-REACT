@@ -1,7 +1,8 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 import { Link } from 'react-router-dom'
 
 function CompanyDashboard() {
+ 
   return (
     <div>
     <meta charSet="utf-8" />
@@ -1221,14 +1222,7 @@ function CompanyDashboard() {
       {/* Footer Section End */}  </main>
     {/* Main contents End */}
     {/* Footer Section Start */}
-    {/* Wrapper End*/}
-    {/* offcanvas start */}
-    {/* Required Library Bundle Script */}
-    {/* External Library Bundle Script */}
-    {/* Mapchart JavaScript */}
-    {/* fslightbox JavaScript */}
-    {/* app JavaScript */}
-    {/* moment JavaScript */}
+   
   </div>
   
   )

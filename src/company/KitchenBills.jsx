@@ -1193,7 +1193,7 @@ function KitchenBills() {
           </div>
           <nav aria-label="breadcrumb">
             <ol className="breadcrumb ">
-              <li className="breadcrumb-item"><Link to="company/viewkitchen">Back</Link></li>
+              <li className="breadcrumb-item"><Link to="/company/viewkitchen">Back</Link></li>
             </ol>
           </nav> 
           {/* Main content start */}

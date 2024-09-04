@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 function KitchenDetails() {
+  
   return (
     <div>
   <meta charSet="utf-8" />

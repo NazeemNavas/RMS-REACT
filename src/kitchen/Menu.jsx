@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css'; // Core Swiper styles
 import 'swiper/css/pagination'; // Pagination module styles
@@ -8,6 +8,7 @@ import { Autoplay, Pagination, Navigation,Grid} from 'swiper/modules';
 import { Link } from 'react-router-dom';
 
 function Menu() {
+
   return (
     <div>
   <meta charSet="utf-8" />

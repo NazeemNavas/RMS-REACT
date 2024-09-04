@@ -1195,7 +1195,7 @@ function OutletBills() {
           <div className="content-inner mt-5 py-0 ">
             <nav aria-label="breadcrumb">
               <ol className="breadcrumb ">
-                <li className="breadcrumb-item"><a href="./kitchendetails.html">Back</a></li>
+                <li className="breadcrumb-item"><Link to="/company/viewkitchen/kitchendetails">Back</Link></li>
               </ol>
             </nav> 
             <h4 className="card-header">Outlet 1</h4>
